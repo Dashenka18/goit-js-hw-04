@@ -8,7 +8,13 @@ for (let calorie = 0; calorie < days.length; calorie++){
     totalCalories += days[calorie].calories;
 }
 
-return totalCalories/days.length;
+if (days.length === 0){
+  return 0;
+} else {
+  return totalCalories/days.length;
+}
+
+
 
 }
 
